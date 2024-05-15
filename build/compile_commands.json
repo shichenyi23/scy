@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/SCY/Desktop/hw1/build",
+  "command": "D:\\mingw\\MinGW\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -o CMakeFiles\\main.dir\\src\\algebra.c.obj -c C:\\Users\\SCY\\Desktop\\hw1\\src\\algebra.c",
+  "file": "C:/Users/SCY/Desktop/hw1/src/algebra.c",
+  "output": "CMakeFiles/main.dir/src/algebra.c.obj"
+},
+{
+  "directory": "C:/Users/SCY/Desktop/hw1/build",
+  "command": "D:\\mingw\\MinGW\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -o CMakeFiles\\main.dir\\src\\main.c.obj -c C:\\Users\\SCY\\Desktop\\hw1\\src\\main.c",
+  "file": "C:/Users/SCY/Desktop/hw1/src/main.c",
+  "output": "CMakeFiles/main.dir/src/main.c.obj"
+}
+]
