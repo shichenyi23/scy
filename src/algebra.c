@@ -2,7 +2,7 @@
  * @Author: shichenyi shichenyi23@163.com
  * @Date: 2024-05-04 16:23:08
  * @LastEditors: shichenyi shichenyi23@163.com
- * @LastEditTime: 2024-05-06 14:38:09
+ * @LastEditTime: 2024-05-15 17:55:51
  * @FilePath: \GitHub\shichenyi.hw1\src\algebra.c
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -73,7 +73,7 @@ Matrix mul_matrix(Matrix a, Matrix b)
         return c;
     }
     else{
-        printf("Error: Matrix a and b must have the same rows and cols.");
+        printf("Error: The number of cols of matrix a must be equal to the number of rows of matrix b.");
         return create_matrix(0, 0);
     }
 }
@@ -94,9 +94,9 @@ Matrix transpose_matrix(Matrix a)
 {
     Matrix c;
     int i,j;
-    c = create_matrix(a.rows,a.cols);
-    for(i=0;i<a.rows;i++){
-        for(j=0;j<a.cols;j++){
+    c = create_matrix(a.cols,a.rows);
+    for(i=0;i<a.cols;i++){
+        for(j=0;j<a.rows;j++){
             c.data[i][j]=a.data[j][i];
         }
     }
@@ -235,6 +235,7 @@ double trace_matrix(Matrix a)
         return tr;
     }
     else{
+        printf("Error: The matrix must be a square matrix.");
         return 0;
     }
 }
